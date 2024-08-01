@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('C:/Users/sandh/OneDrive/Desktop/bgtask3.jpg'); /* Replace with your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Reduced font size for heading */
+    margin-bottom: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); /* Reduced size of cells */
+    grid-template-rows: repeat(3, 80px); /* Reduced size of cells */
+    gap: 3px; /* Reduced gap between cells */
+    margin: 20px auto;
+}
+
+.cell {
+    width: 80px; /* Reduced width of cells */
+    height: 80px; /* Reduced height of cells */
+    background-color: pink;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em; /* Reduced font size for text */
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+#message {
+    font-size: 1.5em; /* Reduced font size for message */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px; /* Reduced padding for button */
+    font-size: 1em;
+    cursor: pointer;
+}
